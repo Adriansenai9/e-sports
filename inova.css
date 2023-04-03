@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 *::-webkit-scrollbar {
@@ -37,6 +38,12 @@ body {
     overflow-x: hidden;
 }
 
+.bg-nav {
+    height: 8vh;
+    width: 100vw;
+    background: #191919;
+}
+
 #home {
     width: 100vw;
     height: 76vh;
@@ -45,8 +52,13 @@ body {
     justify-content: center;
     align-items: center;
     background: #191919;
+
 }
 
+#home img {
+    width: 70%;
+
+}
 
 #recent {
     width: 100vw;
@@ -56,8 +68,50 @@ body {
 
 #games {
     width: 100vw;
-    height: 120vh;
+    height: 50vh;
     background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.elementos {
+    width: 1000px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#games ul {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    transition: 1s;
+
+
+}
+
+#games ul li .item {
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+}
+
+#games img {
+    width: 50px;
+}
+
+.arrastar {
+   margin-left: -100%;
+   transition: 0.5s;
+}
+
+.voltar {
+    transform: translateX(0px);
+    transition: 0.5s;
 }
 
 #about {
@@ -65,7 +119,27 @@ body {
     height: 40vh;
     background: linear-gradient(to right, #050505 0%, #212121 40%);
 }
+
 nav img {
     width: 80px;
-    background: transparent;
+
+}
+
+@media (max-width: 999px) {
+    #home {
+        height: 30vh;
+    }
+
+    #home img {
+        width: 100%;
+
+    }
+
+    #recent {
+        height: 80vh;
+    }
+
+    #games {
+        height: 20vh;
+    }
 }
