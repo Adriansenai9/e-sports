@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FF0F39;
+    border-radius: 15px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+#home {
+    width: 100vw;
+    height: 76vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+}
+
+
+#recent {
+    width: 100vw;
+    height: 120vh;
+    background: linear-gradient(to right, #191919 0%, #050505 40%);
+}
+
+#games {
+    width: 100vw;
+    height: 120vh;
+    background: #191919;
+}
+
+#about {
+    width: 100vw;
+    height: 40vh;
+    background: linear-gradient(to right, #050505 0%, #212121 40%);
+}
+nav img {
+    width: 80px;
+    background: transparent;
+}
