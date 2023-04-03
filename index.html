@@ -12,10 +12,11 @@
 </head>
 
 <body>
-<div class="bg-nav">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid bg-transparent">
-            <a class="navbar-brand text-white text-uppercase fs-3" href="#"><img src="./img/logo.png" alt="" srcset="">E-sports Corporate</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white text-uppercase fs-3 fw-bold" href="#"><img src="./img/logo.png" alt=""
+                    srcset="">E-sports Corporate</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,29 +25,29 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#home">Início</a>
+                        <a class="nav-link active text-white text-uppercase" aria-current="page" href="#home">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#recent">Recentes</a>
+                        <a class="nav-link text-white text-uppercase" href="#recent">Recentes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#games">Jogos</a>
+                        <a class="nav-link text-white text-uppercase" href="#games">Jogos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">Sobre</a>
+                        <a class="nav-link text-white text-uppercase" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white text-uppercase" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Categorias
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Mortal Kombat</a></li>
-                            <li><a class="dropdown-item" href="#">Free Fire</a></li>
-                            <li><a class="dropdown-item" href="#">Fifa</a></li>
-                            <li><a class="dropdown-item" href="#">Call of Duty</a></li>
-                            <li><a class="dropdown-item" href="#">League of legends</a></li>
-                            <li><a class="dropdown-item" href="#">CSGO</a></li>
+                        <ul class="dropdown-menu text-uppercase" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#mortalKombat">Mortal Kombat</a></li>
+                            <li><a class="dropdown-item" href="#freeFire">Free Fire</a></li>
+                            <li><a class="dropdown-item" href="#fifa">Fifa</a></li>
+                            <li><a class="dropdown-item" href="#COD">Call of Duty</a></li>
+                            <li><a class="dropdown-item" href="#lol">League of legends</a></li>
+                            <li><a class="dropdown-item" href="#cs">CSGO</a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
@@ -54,22 +55,38 @@
                             <li><a class="dropdown-item" href="#">Outros...</a></li>
                         </ul>
                     </li>
-                    
+
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    <button class="btn btn-outline-success text-uppercase" type="submit">Pesquisar</button>
                 </form>
             </div>
         </div>
     </nav>
-</div>
+
     <div id="home">
-       
+        <img src="img/Virtual In-game Items Metaverse _ DMarket.jpg" alt="">
     </div>
     <div id="recent"></div>
-    <div id="games"></div>
+    <div id="games">
+        <img id="exit" src="img/arrow-left-square-fill.svg" alt="">
+        <div class="elementos">
+            <ul id="lista">
+                <li><img class="item" id="mortalKombat" src="img/mortalKombat.jpg" alt=""></li>
+                <li><img class="item" id="freeFire" src="img/freeFire.jpg" alt=""></li>
+                <li><img class="item" id="fifa" src="img/fifa.jpg" alt=""></li>
+                <li><img class="item" id="COD" src="img/COD.jpg" alt=""></li>
+                <li><img class="item" id="lol" src="img/lol.jpg" alt=""></li>
+                <li><img class="item" id="cs" src="img/cs.jpg" alt=""></li>
+
+            </ul>
+        </div>
+        <img id="next" src="img/arrow-right-square-fill.svg" alt="">
+    </div>
     <div id="about"></div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
