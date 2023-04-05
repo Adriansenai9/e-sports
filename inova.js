@@ -10,4 +10,4 @@ function carrossel(){
     }
     lista.style.transform = `translateX(${-index * 970}px)`
 }
-setInterval(carrossel, 5000)
+setInterval(carrossel, 10000)
