@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/CADASTROJ.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1><i>CADASTRO</i></h1>
+        <form id="registro-form">
+            <div class="caixa-grande">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" data-min-length="100">
+            </div>
+            <div class="caixa-metade">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name"required placeholder="Digite seu nome">
+            </div>
+            <div class="caixa-metade">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname"required placeholder="Digite seu sobrenome">
+            </div>
+            <div class="caixa-metade">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password"required placeholder="Digite sua senha" data-min-length="6">
+            </div>
+            <div class="caixa-metade">
+                
+                <label for="passwordconfirmation">Confirmar sua senha</label>
+                <input type="password" name="passwordconfirmation" id="passwordconfirmation" placeholder="Confirmar sua senha" data-min-length="6">
+            </div>
+            <div class="caixa-metade">
+                <label for="arquivo">Envie seus documentos: RG/CNH e Cartão de Vacina</label>
+                <form id="upload-form" enctype="multipart/form-data" placeholder="bbbb">
+                    <input type="file" name="file" id="file-input">
+            </div>
+            <div class="caixa-grande">
+                <input type="checkbox" name="acordo" id="acordo">
+                <label for="acordo" id="acordo-label">Eu li e aceito os <a href="https://policies.google.com/privacy?hl=pt-BR">termos de uso</a> de politicas e privacidade</label>
+            </div>
+            <div class="caixa-grande">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+        </form>
+        <p class="error-validation template"></p>
+    </div>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+  <script src="CADASTROJ.js"></script>
+</body>
+</html>
