@@ -52,11 +52,12 @@ body {
     justify-content: center;
     align-items: center;
     background: #191919;
+    overflow-y: hidden;
 
 }
 
 #home img {
-    width: 70%;
+    width: 100%;
 
 }
 
@@ -64,8 +65,56 @@ body {
     width: 100vw;
     height: 120vh;
     background: linear-gradient(to right, #191919 0%, #050505 40%);
+
 }
 
+#recent ul {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#recent ul .champ {
+    width: calc(100% / 3);
+    height: calc(80% / 3);
+    border: 1px solid white;
+    list-style: none;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #191919, #212121);
+    box-shadow: 8px 4px #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#recent ul .champ h5{
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.75;
+    font-weight: 700;
+    background: #FF0F39;
+    border-radius: 10px 10px 0 0;
+}
+#recent ul .champ .champ-bg {
+    height: 75%;
+}
+#recent ul .champ input {
+    border-radius: 0 0 10px 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #191919;
+    transition: 0.5s;
+}
+#recent ul .champ input:hover{
+    opacity: 0.25;
+}
 #games {
     width: 100vw;
     height: 50vh;
@@ -77,10 +126,9 @@ body {
 }
 
 .elementos {
-    width: 1000px;
+    width: 970px;
     height: 300px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 #games ul {
@@ -105,8 +153,8 @@ body {
 }
 
 .arrastar {
-   margin-left: -100%;
-   transition: 0.5s;
+    margin-left: -100%;
+    transition: 0.5s;
 }
 
 .voltar {
@@ -117,7 +165,87 @@ body {
 #about {
     width: 100vw;
     height: 40vh;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to right, #050505 0%, #212121 40%);
+    color: #FFF;
+}
+
+#about .top,
+.bottom {
+    height: calc(100% / 2);
+    margin: 1px solid #FFFFFF;
+}
+
+#about .top {
+    display: flex;
+    flex-direction: row;
+}
+
+#about .top .top-left {
+    width: 80%;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about .top .top-left li {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0.50;
+    transition: 0.5s;
+    border-bottom: 2px solid #FFF;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    width: 110px;
+}
+
+#about .top .top-left li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#about .top .top-left li:hover {
+    width: 130px;
+    opacity: 1.5;
+}
+
+#about .top .top-left li:hover a {
+    color: #FF0F39;
+}
+
+#about .top .top-right {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+#about .top .top-right li img {
+    width: 25px;
+    opacity: 0.25;
+    transition: 0.5s;
+}
+
+#about .top .top-right li img:hover {
+    opacity: 1;
+    width: 30px;
+}
+
+#about .bottom {
+    display: flex;
+    align-items: center;
+    opacity: 0.25;
+    font-size: 12px;
+    margin-left: 10vh;
 }
 
 nav img {
@@ -127,11 +255,12 @@ nav img {
 
 @media (max-width: 999px) {
     #home {
+
         height: 30vh;
     }
 
     #home img {
-        width: 100%;
+        width: 80%;
 
     }
 
@@ -141,5 +270,20 @@ nav img {
 
     #games {
         height: 20vh;
+    }
+
+    #about .top .top-right {
+        flex-direction: column;
+    }
+
+    #games ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #games ul li .item {
+        width: 125px;
+        height: 125px;
     }
 }
