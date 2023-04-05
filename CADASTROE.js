@@ -123,6 +123,6 @@ class Validation {
   
     if (form.checkValidity()) {
       alert('Formulário validado com sucesso!');
-      window.location.href = "outra_pagina.html";
+      window.location.href = "index.html";
     }
 });
